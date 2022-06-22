@@ -1,0 +1,428 @@
+/** Hauptteil **/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 2.5vh;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    background-color: #7C7654;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+footer {
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: .5em;
+    font-size: .65em;
+    ;
+}
+
+footer a {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer img {
+    height: 3em;
+}
+
+.footer {
+    margin: .5em;
+}
+
+.footer_icon_bar {
+    margin-top: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer_icon_bar div {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.glyph {
+    padding-top: .1em;
+    height: 1em;
+}
+
+/** NavBar **/
+
+.logo {
+    display: inline-block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: #7C7654;
+}
+
+.nav-item-selected {
+    background-color: white;
+}
+
+.nav-item-selected a {
+    color: #7C7654;
+}
+
+.logo img {
+    width: 15em;
+    vertical-align: middle;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-links {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar {
+        padding: 0;
+        padding-bottom: .5em;
+        justify-content: center;
+    }
+}
+
+/** Tourenseite **/
+
+.titlerow {
+    margin-top: 2em;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titlerow img {
+    width: 45%;
+}
+
+.touren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.touren a {
+    background-color: #FEFAE0;
+    padding: 1em;
+    font-size: 1.25em;
+    margin: .25em;
+    text-decoration: none;
+    color: #7C7654;
+}
+
+/** Über uns **/
+
+.card_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.card_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 0 0 5px black;
+    width: 33vh;
+}
+
+.card_component img {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    width: 33vh;
+    margin-top: -1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-bottom: .5em;
+}
+
+.card_description {
+    padding-top: .75em;
+    font-size: .75em;
+    text-align: center;
+    height: 32vh;
+}
+
+.about_us_title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.motivation {
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.divider {
+    margin: auto;
+    height: 1px;
+    background-color: black;
+    margin-top: 1em;
+    width: 80%;
+}
+
+/** Impressum und Datenschutz **/
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.datenschutz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.impressum_title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.impressum_text {
+    font-size: .75em;
+}
+
+/** Homepage **/
+
+.home_title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    text-shadow: 0em 0em .2em black;
+}
+
+.home_title_normal {
+    margin-top: 1em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.home_banner {
+    background-color: #0004;
+    background-image: url("assets/Tour2.png");
+    background-blend-mode: darken;
+    background-position: center;
+    height: 100%;
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_description {
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 2em;
+    text-shadow: 0em 0em .2em black;
+}
+
+.home_description_normal {
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2em;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .home_description {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.button_bar {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 450px) {
+    .button_bar {
+        flex-direction: column;
+    }
+    .button_bar a {
+        margin: .25em;
+    }
+}
+
+.button_bar a {
+    text-decoration: none;
+    background-color: #7C7654;
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+}
+
+/** Slideshow **/
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: .75em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0em 0em .2em black;
+}
+
+.numbertext {
+    background-color: #0006;
+    border-bottom-right-radius: 16px;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-shadow: 0em 0em .2em black;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
