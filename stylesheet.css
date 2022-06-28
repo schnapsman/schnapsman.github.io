@@ -295,7 +295,28 @@ footer img {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 2em;
+}
 
+.testimonial_title {
+    margin-top: 1em;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.testimonial_top {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+}
+
+.testimonial_bottom {
+    display: block;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 @media only screen and (max-width: 1000px) {
