@@ -159,6 +159,11 @@ footer img {
     color: #7C7654;
 }
 
+.touren a:hover {
+    background-color: #f2eed3;
+}
+
+
 /** Über uns **/
 
 .card_section {
@@ -351,6 +356,10 @@ footer img {
     padding: 1em;
     border-radius: 15px;
     border: none;
+}
+
+.button_bar a:hover {
+    background-color: #9e966a;
 }
 
 /** Slideshow **/
