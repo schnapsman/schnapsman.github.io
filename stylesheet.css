@@ -339,7 +339,7 @@ footer img {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 810px) {
     .button_bar {
         flex-direction: column;
     }
@@ -350,7 +350,6 @@ footer img {
 
 .button_bar a {
     text-decoration: none;
-    background-color: #7C7654;
     color: white;
     font-size: 1em;
     padding: 1em;
@@ -358,8 +357,22 @@ footer img {
     border: none;
 }
 
-.button_bar a:hover {
+.button_bar_normal {
+    display: flex; 
+    align-items: center;
+    background-color: #7C7654;
+}
+
+.button_bar_normal:hover {
     background-color: #9e966a;
+}
+
+.button_bar_special {
+    background-color: #126900;
+}
+
+.button_bar_special:hover {
+    background-color: #178a00;
 }
 
 /** Slideshow **/
